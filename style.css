@@ -60,7 +60,7 @@ html, body {
   color: #d63384;
 }
 
-.hero, .features, .lookbook, .about {
+.hero, .features, .collections, .about {
   min-height: 60vh;
 }
 
@@ -114,16 +114,20 @@ html, body {
 
 .feature-boxes {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .box {
   background-color: #fefefe;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  padding:25px;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  margin-top: 5px;
+  width: 540px;
 }
 
 .box:hover {
@@ -143,7 +147,7 @@ html, body {
   }
 }
 
-.lookbook {
+.collections {
   background-color: #f7f9fa;
   padding: 80px 20px 120px;
   text-align: center;
@@ -182,7 +186,7 @@ html, body {
   background-color: #ffffff;
   padding: 40px 20px ;
   text-align: center;
-  min-height: 30vh;
+  min-height: 25vh;
 }
 
 .footer {
